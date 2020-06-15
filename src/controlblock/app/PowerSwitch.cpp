@@ -32,7 +32,7 @@ PowerSwitch::PowerSwitch(IDigitalIO& digitalIOReference, ShutdownActivated doShu
 {
     digitalIO.configureDevice(IDigitalIO::DIO_DEVICE_POWERSWITCH);
 
-    powerSwitchIn_port_ = std::make_shared<InputPort>(18);
+    powerSwitchIn_port_ = std::make_shared<InputPort>(27);
     powerSwitchOut_port_ = std::make_shared<OutputPort>(17);
 
     setPowerSignal(PowerState::ON);
